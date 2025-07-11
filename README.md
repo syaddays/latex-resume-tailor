@@ -15,7 +15,7 @@ A Chrome extension that automatically tailors your LaTeX resume for job applicat
 
 1. Clone this repository:
    ```bash
-   git clone [https://github.com/syaddays/latex-resume-tailor]
+   git clone https://github.com/syaddays/latex-resume-tailor
    ```
 
 2. Open Chrome and navigate to `chrome://extensions/`
