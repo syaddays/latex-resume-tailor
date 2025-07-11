@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Resume Tailor</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Resume Tailor</h1>
+      <div id="jd-status" class="status">Detecting job description...</div>
+    </header>
+
+    <section id="jd-section" class="hidden">
+      <h2>Job Description</h2>
+      <div class="jd-meta">
+        <span id="company-name"></span>
+        <span id="job-level"></span>
+      </div>
+      <div id="jd-preview"></div>
+    </section>
+
+    <section id="fallback-section" class="hidden">
+      <h2>Manual Input</h2>
+      <textarea id="jd-input" placeholder="Paste JD or enter URL..."></textarea>
+      <button id="fetch-jd">Fetch JD</button>
+    </section>
+
+    <section id="skills-section" class="hidden">
+      <h2>Key Skills</h2>
+      <div id="skills-list" class="checkbox-list"></div>
+    </section>
+
+    <section id="projects-section" class="hidden">
+      <h2>Relevant Projects</h2>
+      <div id="projects-list"></div>
+      <button id="add-project">+ Add Project</button>
+    </section>
+
+    <section id="summary-section" class="hidden">
+      <h2>Professional Summary</h2>
+      <textarea id="summary-input"></textarea>
+      <button id="rewrite-summary">Optimize Summary</button>
+    </section>
+
+    <section id="referral-section" class="hidden">
+      <h2>Referral Opportunity</h2>
+      <a id="referral-link" target="_blank" class="btn">Find Employees</a>
+      <div id="referral-tip"></div>
+    </section>
+
+    <section id="resume-section">
+      <h2>Your LaTeX Resume</h2>
+      <textarea id="resume-input" placeholder="Paste your LaTeX resume..."></textarea>
+    </section>
+
+    <footer>
+      <button id="process-btn" disabled>Tailor Resume</button>
+      <div id="output-section" class="hidden">
+        <h2>Tailored Resume</h2>
+        <textarea id="resume-output" readonly></textarea>
+        <div class="actions">
+          <button id="copy-resume">Copy LaTeX</button>
+          <button id="download-resume">Download .tex</button>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

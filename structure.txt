@@ -1,0 +1,17 @@
+latex-resume-tailor/
+├── manifest.json
+├── background.js
+├── content/
+│   └── jdScraper.js
+├── popup/
+│   ├── popup.html
+│   ├── popup.css
+│   └── popup.js
+├── utils/
+│   ├── llm.js
+│   └── resumeProcessor.js
+├── icons/
+│   ├── icon16.png
+│   ├── icon48.png
+│   └── icon128.png
+└── README.md
